@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "next dev",
     "lint": "next lint",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "test": "jest --watch --env=jsdom",
     "test:ci": "jest --ci"
