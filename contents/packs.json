@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Pack #1",
+    "body": "this is a body",
+    "date": "Date today",
+    "image": "/featured1.png",
+    "sku": "123123"
+  },
+  {
+    "title": "Pack #2",
+    "body": "this is a body",
+    "date": "Date today",
+    "image": "/featured1.png",
+    "sku": "657567"
+  },
+  {
+    "title": "Pack #3",
+    "body": "this is a body",
+    "date": "Date today",
+    "image": "/featured1.png",
+    "sku": "asf"
+  },
+  {
+    "title": "Pack #4",
+    "body": "this is a body",
+    "date": "Date today",
+    "image": "/featured1.png",
+    "sku": "asdfrty4"
+  },
+  {
+    "title": "Pack #5",
+    "body": "this is a body",
+    "date": "Date today",
+    "image": "/featured1.png",
+    "sku": "yurtgf"
+  },
+  {
+    "title": "Pack #6",
+    "body": "this is a body",
+    "date": "Date today",
+    "image": "/featured1.png",
+    "sku": "12343"
+  },
+  {
+    "title": "Pack #7",
+    "date": "Date today 2",
+    "body": "this is a body 2",
+    "image": "/featured1.png",
+    "sku": "34dfg54"
+  }
+]
