@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { AppBar, Toolbar } from '@mui/material'
 import IconButton from '@mui/material/IconButton'
 import MenuIcon from '@mui/icons-material/Menu'
-import { MenuContext } from 'Providers/menuContext'
+import { MenuContext } from 'providers/menuContext'
 import useIsMobile from 'hooks/useIsMobile'
 
 function Navbar() {

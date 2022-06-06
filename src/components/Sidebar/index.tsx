@@ -12,7 +12,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox'
 import MailIcon from '@mui/icons-material/Mail'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import TwitterIcon from '@mui/icons-material/Twitter'
-import { MenuContext } from 'Providers/menuContext'
+import { MenuContext } from 'providers/menuContext'
 import Link from 'next/link'
 
 import useIsMobile from 'hooks/useIsMobile'

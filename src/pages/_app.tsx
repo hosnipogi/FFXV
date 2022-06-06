@@ -4,7 +4,9 @@ import { AppProps } from 'next/app'
 import { CacheProvider, EmotionCache } from '@emotion/react'
 import createEmotionCache from '../../src/lib/createEmotionCache'
 import Layout from 'components/Layout'
-import Providers from 'Providers'
+import Providers from 'providers'
+
+import FBMessenger from 'components/FacebookMessenger'
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache()
@@ -24,6 +26,7 @@ const App = (props: MyAppProps) => {
       <Providers>
         <Layout>
           <Component {...pageProps} />
+          <FBMessenger />
         </Layout>
       </Providers>
     </CacheProvider>
