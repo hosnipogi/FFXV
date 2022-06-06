@@ -6,8 +6,9 @@ type Props = {
 
 export const MenuContext = createContext(undefined)
 
-export const MenuContextProvider = ({ children }: Props) => {
+export const MenuProvider = ({ children }: Props) => {
   const [menuIsOpen, setMenuOpen] = useState(false)
+
   return (
     <MenuContext.Provider value={{ menuIsOpen, setMenuOpen }}>
       {children}

@@ -1,5 +1,6 @@
 import React from 'react'
-import { MenuContextProvider } from './menuContext'
+import { MenuProvider } from './menuProvider'
+import { ModalProvider } from './modalProvider'
 import { ThemeProvider } from '@mui/material/styles'
 import theme from 'styles/theme'
 import CssBaseline from '@mui/material/CssBaseline'
@@ -12,7 +13,9 @@ const Providers: React.FC<Props> = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <MenuContextProvider>{children}</MenuContextProvider>
+      <ModalProvider>
+        <MenuProvider>{children}</MenuProvider>
+      </ModalProvider>
     </ThemeProvider>
   )
 }

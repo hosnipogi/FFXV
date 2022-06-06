@@ -1,7 +1,6 @@
 {
-  "title": "Sky wyvern",
+  "title": "Sky Wyvern",
   "body": "pack description here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa.",
-  "image": "/featured1.png",
-  "date": "June 6, 2022",
-  "sku": "123123"
+  "category": "General",
+  "sku": "098"
 }

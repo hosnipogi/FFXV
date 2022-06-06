@@ -1,51 +1,51 @@
 [
   {
-    "title": "Pack #1",
+    "title": "NEW FEATURE BUNDLE",
     "body": "this is a body",
     "date": "Date today",
-    "image": "/featured1.png",
-    "sku": "123123"
+    "sku": "001",
+    "price": 99.99
   },
   {
-    "title": "Pack #2",
+    "title": "POWER UP ON THE DOUBLE!",
     "body": "this is a body",
     "date": "Date today",
-    "image": "/featured1.png",
-    "sku": "657567"
+    "sku": "002",
+    "price": 99.99
   },
   {
-    "title": "Pack #3",
-    "body": "this is a body",
+    "title": "Skyweaver Wyvern Doubler Bundle!",
+    "body": "Power your attack against Skyweaver Wyvern!",
     "date": "Date today",
-    "image": "/featured1.png",
-    "sku": "asf"
+    "sku": "003",
+    "price": 99.99
   },
   {
     "title": "Pack #4",
     "body": "this is a body",
     "date": "Date today",
-    "image": "/featured1.png",
-    "sku": "asdfrty4"
+    "sku": "004",
+    "price": 99.99
   },
   {
     "title": "Pack #5",
     "body": "this is a body",
     "date": "Date today",
-    "image": "/featured1.png",
-    "sku": "yurtgf"
+    "sku": "098",
+    "price": 99.99
   },
   {
     "title": "Pack #6",
     "body": "this is a body",
     "date": "Date today",
-    "image": "/featured1.png",
-    "sku": "12343"
+    "sku": "098",
+    "price": 99.99
   },
   {
     "title": "Pack #7",
     "date": "Date today 2",
     "body": "this is a body 2",
-    "image": "/featured1.png",
-    "sku": "34dfg54"
+    "sku": "098",
+    "price": 99.99
   }
 ]

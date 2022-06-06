@@ -26,7 +26,7 @@ function Layout({ children }: Props) {
       <Sidebar width={drawerWidth} />
       <Container maxWidth={false} disableGutters>
         <Navbar />
-        <Container sx={{ minHeight: '80vh', paddingBottom: 10 }}>
+        <Container sx={{ minHeight: '80vh', paddingBottom: 10, marginY: 3 }}>
           {children}
         </Container>
       </Container>

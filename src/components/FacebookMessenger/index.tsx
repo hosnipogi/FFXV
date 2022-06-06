@@ -8,8 +8,6 @@ const FBMessenger = () => {
     url = window.location.hostname
   }
 
-  console.log({ url })
-
   if (process.env.NODE_ENV !== 'development' && url !== 'localhost') {
     return (
       <MessengerChat
