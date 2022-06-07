@@ -1,5 +1,5 @@
 import React from 'react'
-import Packs from 'components/Packs'
+// import Packs from 'components/Packs'
 import IconWithLabel from 'components/IconWithLabel'
 import StorefrontIcon from '@mui/icons-material/Storefront'
 
@@ -12,7 +12,8 @@ const Store = () => {
         }
         label="Store"
       />
-      <Packs />
+      {/* <Packs /> */}
+      will delete
     </>
   )
 }

@@ -1,3 +1,4 @@
+import React, { useCallback, useState } from 'react'
 import Box from '@mui/material/Box'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
@@ -8,6 +9,10 @@ import Stack from '@mui/material/Stack'
 import { styled } from '@mui/material/styles'
 import type { Content } from 'types'
 import useIsMobile from 'hooks/useIsMobile'
+import ListItems from 'components/ListItems'
+
+import useModal from 'hooks/useModal'
+import { ModalOverlay } from 'components/Modal'
 
 const StyledCard = styled(Card)`
   background-color: ${({ theme }) => theme.palette.background.paper};
@@ -35,8 +40,8 @@ const CustomCard: React.FC<Props> = ({ content, variant = 'default' }) => {
         >
           <CardMedia
             component="img"
-            src={`/images/sku-${content.sku}.png`}
-            alt="any"
+            src={content.image as string}
+            alt={content.image as string}
             sx={{
               maxWidth: '600px',
               borderRadius: 2,
@@ -49,7 +54,7 @@ const CustomCard: React.FC<Props> = ({ content, variant = 'default' }) => {
             }}
           >
             <Typography variant="h4">{content.title}</Typography>
-            <Stack direction="row" sx={{ marginBottom: 2 }}>
+            {/* <Stack direction="row" sx={{ marginBottom: 2 }}>
               <Chip
                 variant="outlined"
                 sx={{ marginRight: 1 }}
@@ -61,8 +66,8 @@ const CustomCard: React.FC<Props> = ({ content, variant = 'default' }) => {
                 label={`SKU# ${content.sku}`}
                 size="small"
               />
-            </Stack>
-            <Typography variant="h6">{content.body}</Typography>
+            </Stack> */}
+            <Typography variant="h6">{content.description}</Typography>
           </Box>
         </CardContent>
       </StyledCard>
@@ -73,14 +78,14 @@ const CustomCard: React.FC<Props> = ({ content, variant = 'default' }) => {
     <StyledCard>
       <CardMedia
         component="img"
-        image={`/images/sku-${content.sku}.png`}
+        image={content.image as string}
         sx={{ maxHeight: '280px', minHeight: '280px', objectFit: 'cover' }}
         alt="Paella dish"
       />
       <CardContent>
         <Typography variant="h6">{content.title}</Typography>
         <Typography variant="subtitle2" color="info.main">
-          {content.body}
+          {content.description}
         </Typography>
       </CardContent>
       <CardContent
@@ -104,4 +109,29 @@ const CustomCard: React.FC<Props> = ({ content, variant = 'default' }) => {
   )
 }
 
-export default CustomCard
+const WithModal = ({ content, variant }: { content: any; variant?: any }) => {
+  const [modal, setModal] = useState<React.ReactNode>()
+  const { setModalOpen } = useModal(modal)
+
+  const handleModal = useCallback(
+    (node: React.ReactNode) => {
+      setModal(node)
+      setModalOpen()
+    },
+    [setModalOpen]
+  )
+
+  return (
+    <div
+      onClick={() =>
+        handleModal(
+          <ModalOverlay component={<ListItems items={content.items} />} />
+        )
+      }
+    >
+      <CustomCard content={content} variant={variant} />
+    </div>
+  )
+}
+
+export default React.memo(WithModal)
