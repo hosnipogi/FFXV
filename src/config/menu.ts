@@ -12,11 +12,6 @@ const Nav = [
     icon: 'Home',
   },
   {
-    label: Links.STORE,
-    href: `/store`,
-    icon: 'Home',
-  },
-  {
     label: Links.ABOUT,
     href: `/about`,
     icon: 'Home',

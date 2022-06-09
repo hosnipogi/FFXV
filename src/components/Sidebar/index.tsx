@@ -8,8 +8,8 @@ import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
-import InboxIcon from '@mui/icons-material/MoveToInbox'
-import MailIcon from '@mui/icons-material/Mail'
+import HomeIcon from '@mui/icons-material/Home';
+import QuizIcon from '@mui/icons-material/Quiz';
 import FacebookIcon from '@mui/icons-material/Facebook'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import { MenuContext } from 'providers/menuProvider'
@@ -82,7 +82,7 @@ const DrawerChildren = () => (
           <Link href={href} passHref>
             <ListItemButton>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {index % 2 === 0 ? <HomeIcon /> : <QuizIcon />}
               </ListItemIcon>
               <ListItemText primary={label} />
             </ListItemButton>

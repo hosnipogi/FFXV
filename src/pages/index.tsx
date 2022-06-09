@@ -1,38 +1,23 @@
 import path from 'path'
 import fs from 'fs'
 
-import Link from 'next/link'
-import Card from 'components/Card'
 import Divider from '@mui/material/Divider'
 import WhatshotIcon from '@mui/icons-material/Whatshot'
 import StorefrontIcon from '@mui/icons-material/Storefront'
 import IconWithLabel from 'components/IconWithLabel'
 
 import Packs from 'components/Packs'
-// import { PACKLINK } from 'config/'
-
-function generateRandom(arr: any[]) {
-  return Math.floor(Math.random() * arr.length)
-}
+import FeaturedCarousel from 'components/Carousel'
 
 const Home = ({ siteContents }) => {
-  // const featuredLink = `/${PACKLINK}/${Featured.sku}`
-
   return (
     <>
       <IconWithLabel
         iconComponent={<WhatshotIcon sx={{ marginRight: 1 }} color="warning" />}
         label="Featured"
       />
-      {/* <Link href={featuredLink} passHref> */}
-      {/* <a href={featuredLink} style={{ textDecoration: 'none' }}> */}
-      <Card
-        content={siteContents[generateRandom(siteContents)]}
-        variant="featured"
-      />
-      {/* </a> */}
-      {/* </Link> */}
-      <Divider variant="middle" sx={{ marginY: 10 }} />
+      <FeaturedCarousel contents={siteContents} />
+      <Divider variant="middle" sx={{ marginY: 6 }} />
       <IconWithLabel
         iconComponent={
           <StorefrontIcon sx={{ marginRight: 1 }} color="warning" />
