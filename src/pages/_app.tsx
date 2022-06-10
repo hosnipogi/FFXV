@@ -2,7 +2,7 @@ import * as React from 'react'
 import Head from 'next/head'
 import { AppProps } from 'next/app'
 import { CacheProvider, EmotionCache } from '@emotion/react'
-import createEmotionCache from '../../src/lib/createEmotionCache'
+import createEmotionCache from 'lib/createEmotionCache'
 import Layout from 'components/Layout'
 import Providers from 'providers'
 
