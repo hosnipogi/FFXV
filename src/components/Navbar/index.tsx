@@ -2,8 +2,8 @@ import React, { useContext } from 'react'
 import { AppBar, Toolbar } from '@mui/material'
 import IconButton from '@mui/material/IconButton'
 import MenuIcon from '@mui/icons-material/Menu'
-import { MenuContext } from 'providers/menuProvider'
 import useIsMobile from 'hooks/useIsMobile'
+import { MenuContext } from 'providers/menuProvider'
 
 function Navbar() {
   const { menuIsOpen, setMenuOpen } = useContext(MenuContext)
