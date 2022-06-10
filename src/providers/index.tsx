@@ -12,7 +12,7 @@ type Props = {
 const Providers: React.FC<Props> = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
-      <CssBaseline />
+      <CssBaseline enableColorScheme />
       <ModalProvider>
         <MenuProvider>{children}</MenuProvider>
       </ModalProvider>

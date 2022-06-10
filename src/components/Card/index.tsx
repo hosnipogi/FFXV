@@ -15,13 +15,17 @@ const CustomCard: React.FC<Props> = ({ content, variant = 'default' }) => {
   const [modal, setModal] = useState<React.ReactNode>()
   const { setModalOpen, setModalOptions } = useModal(modal)
 
-  const handleBuy = (e, { dataTitle, dataPrice, dataDescription }) => {
+  const handleBuy = (
+    e,
+    { dataTitle, dataPrice, dataDescription, dataImage }
+  ) => {
     e.stopPropagation()
     setModal(
       <Checkout
         dataTitle={dataTitle}
         dataDescription={dataDescription}
         dataPrice={dataPrice}
+        dataImage={dataImage}
       />
     )
     setModalOptions({
@@ -45,6 +49,7 @@ const CustomCard: React.FC<Props> = ({ content, variant = 'default' }) => {
           dataTitle: content.title,
           dataPrice: content.price,
           dataDescription: content.description,
+          dataImage: content.image,
         })
       }
     />

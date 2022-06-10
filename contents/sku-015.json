@@ -1,7 +1,7 @@
 {
-  "title": "LEVEL UP COMBO PACK!",
-  "description": "HERO + VIP COMBO!!!",
-  "image": "https://cdn.epicaction-online.com/webportal/y21m12s1_basic_nvipdec21v2_top_art.png",
+  "title": "Permanent Realm Join Combo!",
+  "description": "Permanently Move Your Empire!",
+  "image": "https://cdn.epicaction-online.com/webportal/y21m7w2_basic_nwebspecial_top_art.png",
   "items": [
     {
       "img": "https://cdn.epicaction-online.com/webportal/favor_prism_btn_icon_05.png",
@@ -19,109 +19,84 @@
       "itemCount": "x20 "
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/pi_vip_points_radiant_07.png",
-      "title": "1 Onslaught VIP Points",
-      "itemCount": "x22.8B"
-    },
-    {
-      "img": "https://cdn.epicaction-online.com/webportal/astral_gating_icon_r_flexitusk.png",
-      "title": "Red Flexitusk Leveling Sigil Lv 1",
-      "itemCount": "x1.5B"
-    },
-    {
-      "img": "https://cdn.epicaction-online.com/webportal/astral_gating_icon_r_flexitusk.png",
-      "title": "Red Flexitusk Training Upgrade Lv. 1",
-      "itemCount": "x3B"
-    },
-    {
-      "img": "https://cdn.epicaction-online.com/webportal/astral_power_icon.png",
-      "title": "Astral Full Health Talisman",
-      "itemCount": "x40 "
-    },
-    {
-      "img": "https://cdn.epicaction-online.com/webportal/astral_gating_icon_b_flexitusk.png",
-      "title": "Blue Flexitusk Leveling Sigil Lv 1",
-      "itemCount": "x1.5B"
-    },
-    {
-      "img": "https://cdn.epicaction-online.com/webportal/astral_gating_icon_b_flexitusk.png",
-      "title": "Blue Flexitusk Training Upgrade Lv. 1",
-      "itemCount": "x3B"
-    },
-    {
-      "img": "https://cdn.epicaction-online.com/webportal/pi_hero_medal_kingsglaive_noctis_08_nobg.png",
-      "title": "Mythic Kingsglaive Noctis Medal",
-      "itemCount": "x5B"
-    },
-    {
-      "img": "https://cdn.epicaction-online.com/webportal/pi_hero_xp_kingsglaive_noctis.png",
-      "title": "100,000 Kingsglaive Noctis Hero EXP",
-      "itemCount": "x596 "
-    },
-    {
-      "img": "https://cdn.epicaction-online.com/webportal/team_emblem_kingsglaive_noctis.png",
-      "title": "Mirror Hero: Kingsglaive Noctis Special Research Tokens",
-      "itemCount": "x200K"
-    },
-    {
-      "img": "https://cdn.epicaction-online.com/webportal/pi_hero_xp_boost_kingsglaive_noctis_02.png",
-      "title": "Lifetime Kingsglaive Noctis Hero EXP Doubler",
+      "img": "https://cdn.epicaction-online.com/webportal/pi_beginnersteleport.png",
+      "title": "PERMANENTLY Move Your Empire to a New Realm!",
       "itemCount": "x1 "
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/gear_kingsglaive_noctis_preset_token_icon.png",
-      "title": "Kingsglaive Noctis Gear Preset Slot 1",
-      "itemCount": "x1 "
+      "img": "https://cdn.epicaction-online.com/webportal/troop_plus_t15_cavalry_icon.png",
+      "title": "Dark Cavalry Lv 17",
+      "itemCount": "x5T"
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/pi_hero_mp_boost_kingsglaive_noctis_02.png",
-      "title": "Lifetime Kingsglaive Noctis Hero Max MP Doubler",
-      "itemCount": "x1 "
+      "img": "https://cdn.epicaction-online.com/webportal/troop_plus_t15_mage_icon.png",
+      "title": "Dark Mage Lv 17",
+      "itemCount": "x5T"
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/hero_garrison_03_icon.png",
-      "title": "Unlock Kingsglaive Noctis Order of Heroes MP Regen",
-      "itemCount": "x1 "
+      "img": "https://cdn.epicaction-online.com/webportal/troop_plus_t15_infantry_icon.png",
+      "title": "Dark Warrior Lv 17",
+      "itemCount": ""
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/gpg_ability_kingsglaive_noctis_02.png",
-      "title": "Kingsglaive Noctis's Guild Adventurers Hall Kingsglaive Warp Strike Unlock",
-      "itemCount": "x1 "
+      "img": "https://cdn.epicaction-online.com/webportal/troop_plus_t15_siege_icon.png",
+      "title": "Dark Siege Engine Lv 17",
+      "itemCount": "x5T"
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/pi_hero_medal_kingsglaive_luna_08_nobg.png",
-      "title": "Mythic Kingsglaive Luna Medal",
-      "itemCount": "x5B"
+      "img": "https://cdn.epicaction-online.com/webportal/troop_juggernaut_dw_merc05_plus_icon.png",
+      "title": "Dark Juggernaut Lv 19",
+      "itemCount": "x5T"
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/team_emblem_kingsglaive_luna.png",
-      "title": "Mirror Hero: Kingsglaive Luna Special Research Tokens",
-      "itemCount": "x200K"
+      "img": "https://cdn.epicaction-online.com/webportal/troop_guardian_dw_merc05_plus_icon.png",
+      "title": "Dark Guardian Lv 19",
+      "itemCount": "x5T"
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/pi_hero_xp_kingsglaive_luna.png",
-      "title": "500T Kingsglaive Luna Hero EXP",
-      "itemCount": "x600 "
+      "img": "https://cdn.epicaction-online.com/webportal/troop_airship_dw_merc05_plus_icon.png",
+      "title": "Dark Airship Lv 19",
+      "itemCount": "x5T"
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/team_emblem_kingsglaive_luna.png",
-      "title": "Mirror Hero: Kingsglaive Luna Research Tokens",
-      "itemCount": "x990M"
+      "img": "https://cdn.epicaction-online.com/webportal/troop_mech_dw_merc05_plus_icon.png",
+      "title": "Dark Mech Lv 19",
+      "itemCount": "x5T"
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/hero_garrison_03_icon.png",
-      "title": "Unlock Kingsglaive Luna Order of Heroes MP Regen",
-      "itemCount": "x1 "
+      "img": "https://cdn.epicaction-online.com/webportal/troop_lightning_t14_siege_icon.png",
+      "title": "Dark Lightning Elemental Troop Lv 14",
+      "itemCount": "x1.5T"
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/gpg_ability_kingsglaive_luna_02.png",
-      "title": "Kingsglaive Luna's Kingsglaive Healing Touch Guild Adventurers Hall Unlock",
-      "itemCount": "x1 "
+      "img": "https://cdn.epicaction-online.com/webportal/troop_earth_t14_mage_icon.png",
+      "title": "Dark Earth Elemental Troop Lv 14",
+      "itemCount": "x1.5T"
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/pi_hero_xp_boost_kingsglaive_luna_02.png",
-      "title": "Lifetime Kingsglaive Luna Hero EXP Doubler",
-      "itemCount": "x1 "
+      "img": "https://cdn.epicaction-online.com/webportal/troop_ice_t14_infantry_icon.png",
+      "title": "Dark Ice Elemental Troop Lv 14",
+      "itemCount": "x1.5T"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/troop_fire_t14_cavalry_icon.png",
+      "title": "Dark Fire Elemental Troop Lv 14",
+      "itemCount": "x1.5T"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/troop_monsterwars_irongiant_04_icons.png",
+      "title": "Dark Iron Giant Lv 4",
+      "itemCount": "x40B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/troop_monsterwars_quetzalcoatl_04_icons.png",
+      "title": "Dark Quetzalcoatl Lv 4",
+      "itemCount": "x40B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/troop_monsterwars_behemothking_04_icons.png",
+      "title": "Dark Behemoth King Lv 4",
+      "itemCount": "x40B"
     },
     {
       "img": "https://cdn.epicaction-online.com/webportal/token_event_chocobo_derby_silver.png",
@@ -216,7 +191,7 @@
     {
       "img": "https://cdn.epicaction-online.com/webportal/token_moogle_high_tier.png",
       "title": "Moogle Reward Tokens",
-      "itemCount": "x120 "
+      "itemCount": "x240 "
     },
     {
       "img": "https://cdn.epicaction-online.com/webportal/token_veteraneos_icon_01_diamond.png",

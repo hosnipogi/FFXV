@@ -1,7 +1,7 @@
 {
-  "title": "LEVEL UP COMBO PACK!",
-  "description": "HERO + VIP COMBO!!!",
-  "image": "https://cdn.epicaction-online.com/webportal/y21m12s1_basic_nvipdec21v2_top_art.png",
+  "title": "NEW AUX LEVELS AVAILABLE NOW +150M DARK MERC RALLY!",
+  "description": "NEW AUX LEVELS AVAILABLE NOW +150M DARK ELEMENTAL RALLY!",
+  "image": "https://cdn.epicaction-online.com/webportal/y21m7w2_basic_nweeklydeal_top_art.png",
   "items": [
     {
       "img": "https://cdn.epicaction-online.com/webportal/favor_prism_btn_icon_05.png",
@@ -19,108 +19,98 @@
       "itemCount": "x20 "
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/pi_vip_points_radiant_07.png",
-      "title": "1 Onslaught VIP Points",
-      "itemCount": "x22.8B"
+      "img": "https://cdn.epicaction-online.com/webportal/pi_blueprint_urban_03.png",
+      "title": "Master Dark Auxiliary Building Blueprint",
+      "itemCount": "x169.43M"
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/astral_gating_icon_r_flexitusk.png",
-      "title": "Red Flexitusk Leveling Sigil Lv 1",
-      "itemCount": "x1.5B"
+      "img": "https://cdn.epicaction-online.com/webportal/pi_blueprint_urban_03.png",
+      "title": "Dark Auxiliary Building Blueprint",
+      "itemCount": "x450M"
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/astral_gating_icon_r_flexitusk.png",
-      "title": "Red Flexitusk Training Upgrade Lv. 1",
-      "itemCount": "x3B"
+      "img": "https://cdn.epicaction-online.com/webportal/pi_blueprint_diner01.png",
+      "title": "Ignis's Diner Blueprint",
+      "itemCount": "x10K"
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/astral_power_icon.png",
-      "title": "Astral Full Health Talisman",
-      "itemCount": "x40 "
+      "img": "https://cdn.epicaction-online.com/webportal/pi_blueprint_research_lab_05.png",
+      "title": "Arcanaeum Blueprint",
+      "itemCount": "x12K"
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/astral_gating_icon_b_flexitusk.png",
-      "title": "Blue Flexitusk Leveling Sigil Lv 1",
-      "itemCount": "x1.5B"
+      "img": "https://cdn.epicaction-online.com/webportal/pi_blueprint_elemental_troop.png",
+      "title": "Elemancy Hall Blueprint",
+      "itemCount": "x120K"
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/astral_gating_icon_b_flexitusk.png",
-      "title": "Blue Flexitusk Training Upgrade Lv. 1",
-      "itemCount": "x3B"
+      "img": "https://cdn.epicaction-online.com/webportal/pi_blueprint_militarybunker_01.png",
+      "title": "Dark Defense Ministry Blueprint",
+      "itemCount": "x25.5M"
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/pi_hero_medal_kingsglaive_noctis_08_nobg.png",
-      "title": "Mythic Kingsglaive Noctis Medal",
-      "itemCount": "x5B"
+      "img": "https://cdn.epicaction-online.com/webportal/pi_blueprint_building_market_01.png",
+      "title": "Dark Strategy Hall Blueprint",
+      "itemCount": "x50M"
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/pi_hero_xp_kingsglaive_noctis.png",
-      "title": "100,000 Kingsglaive Noctis Hero EXP",
-      "itemCount": "x596 "
-    },
-    {
-      "img": "https://cdn.epicaction-online.com/webportal/team_emblem_kingsglaive_noctis.png",
-      "title": "Mirror Hero: Kingsglaive Noctis Special Research Tokens",
-      "itemCount": "x200K"
-    },
-    {
-      "img": "https://cdn.epicaction-online.com/webportal/pi_hero_xp_boost_kingsglaive_noctis_02.png",
-      "title": "Lifetime Kingsglaive Noctis Hero EXP Doubler",
+      "img": "https://cdn.epicaction-online.com/webportal/researchlibrary_01.png",
+      "title": "Dark Workshop Unlock",
       "itemCount": "x1 "
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/gear_kingsglaive_noctis_preset_token_icon.png",
-      "title": "Kingsglaive Noctis Gear Preset Slot 1",
+      "img": "https://cdn.epicaction-online.com/webportal/pi_gating_unlock_building_market_01.png",
+      "title": "Dark Strategy Hall Unlock",
       "itemCount": "x1 "
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/pi_hero_mp_boost_kingsglaive_noctis_02.png",
-      "title": "Lifetime Kingsglaive Noctis Hero Max MP Doubler",
+      "img": "https://cdn.epicaction-online.com/webportal/pi_gating_unlock_mercenary_pit.png",
+      "title": "Mercenary Fighting Pits Unlock",
       "itemCount": "x1 "
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/hero_garrison_03_icon.png",
-      "title": "Unlock Kingsglaive Noctis Order of Heroes MP Regen",
+      "img": "https://cdn.epicaction-online.com/webportal/pi_gating_unlock_monster_farm.png",
+      "title": "Monster Pen Unlock",
       "itemCount": "x1 "
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/gpg_ability_kingsglaive_noctis_02.png",
-      "title": "Kingsglaive Noctis's Guild Adventurers Hall Kingsglaive Warp Strike Unlock",
+      "img": "https://cdn.epicaction-online.com/webportal/pi_gating_unlock_oracle.png",
+      "title": "Oracle Temple Unlock",
       "itemCount": "x1 "
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/pi_hero_medal_kingsglaive_luna_08_nobg.png",
-      "title": "Mythic Kingsglaive Luna Medal",
-      "itemCount": "x5B"
-    },
-    {
-      "img": "https://cdn.epicaction-online.com/webportal/team_emblem_kingsglaive_luna.png",
-      "title": "Mirror Hero: Kingsglaive Luna Special Research Tokens",
-      "itemCount": "x200K"
-    },
-    {
-      "img": "https://cdn.epicaction-online.com/webportal/pi_hero_xp_kingsglaive_luna.png",
-      "title": "500T Kingsglaive Luna Hero EXP",
-      "itemCount": "x600 "
-    },
-    {
-      "img": "https://cdn.epicaction-online.com/webportal/team_emblem_kingsglaive_luna.png",
-      "title": "Mirror Hero: Kingsglaive Luna Research Tokens",
-      "itemCount": "x990M"
-    },
-    {
-      "img": "https://cdn.epicaction-online.com/webportal/hero_garrison_03_icon.png",
-      "title": "Unlock Kingsglaive Luna Order of Heroes MP Regen",
+      "img": "https://cdn.epicaction-online.com/webportal/pi_gating_unlock_alchemy_01.png",
+      "title": "Magitek Converter Unlock",
       "itemCount": "x1 "
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/gpg_ability_kingsglaive_luna_02.png",
-      "title": "Kingsglaive Luna's Kingsglaive Healing Touch Guild Adventurers Hall Unlock",
+      "img": "https://cdn.epicaction-online.com/webportal/pi_gating_unlock_guildprovinggrounds.png",
+      "title": "Guild Adventurers Hall Unlock",
       "itemCount": "x1 "
     },
     {
-      "img": "https://cdn.epicaction-online.com/webportal/pi_hero_xp_boost_kingsglaive_luna_02.png",
-      "title": "Lifetime Kingsglaive Luna Hero EXP Doubler",
+      "img": "https://cdn.epicaction-online.com/webportal/pi_gating_unlock_elemental_troop.png",
+      "title": "Elemancy Hall Unlock",
+      "itemCount": "x1 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_gating_unlock_crystal_nexus.png",
+      "title": "Crystal Nexus Unlock",
+      "itemCount": "x1 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_gating_unlock_research_lab_05.png",
+      "title": "Arcanaeum Unlock",
+      "itemCount": "x1 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_gating_unlock_militarybunker_01.png",
+      "title": "Defense Ministry Unlock",
+      "itemCount": "x1 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_gating_unlock_hatchery_01.png",
+      "title": "Monster Ranch Unlock",
       "itemCount": "x1 "
     },
     {
@@ -216,7 +206,7 @@
     {
       "img": "https://cdn.epicaction-online.com/webportal/token_moogle_high_tier.png",
       "title": "Moogle Reward Tokens",
-      "itemCount": "x120 "
+      "itemCount": "x240 "
     },
     {
       "img": "https://cdn.epicaction-online.com/webportal/token_veteraneos_icon_01_diamond.png",

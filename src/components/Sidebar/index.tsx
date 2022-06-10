@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import Box from '@mui/material/Box'
+import Avatar from '@mui/material/Avatar'
 import Drawer from '@mui/material/Drawer'
 import Toolbar from '@mui/material/Toolbar'
 import List from '@mui/material/List'
@@ -8,8 +8,10 @@ import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
-import HomeIcon from '@mui/icons-material/Home';
-import QuizIcon from '@mui/icons-material/Quiz';
+import HomeIcon from '@mui/icons-material/Home'
+import QuizIcon from '@mui/icons-material/Quiz'
+import Typography from '@mui/material/Typography'
+import Stack from '@mui/material/Stack'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import { MenuContext } from 'providers/menuProvider'
@@ -23,9 +25,7 @@ type DrawerProps = {
 }
 
 function Sidebar({ width = 240 }: DrawerProps) {
-  const { menuIsOpen, setMenuOpen } = useContext(MenuContext)
-  // const [mobileOpen, setMobileOpen] = useState(false)
-
+  const { menuIsOpen, setMenuOpen, country, currency } = useContext(MenuContext)
   const handleDrawerToggle = () => {
     setMenuOpen(!menuIsOpen)
   }
@@ -39,7 +39,7 @@ function Sidebar({ width = 240 }: DrawerProps) {
     flexShrink: 0,
     '& .MuiDrawer-paper': {
       borderRight: '1px solid',
-      borderColor: 'border.secondary',
+      borderColor: 'border.default',
       width,
       boxSizing: 'border-box',
       backgroundColor: 'background.default',
@@ -60,21 +60,24 @@ function Sidebar({ width = 240 }: DrawerProps) {
           }}
           sx={css}
         >
-          <DrawerChildren />
+          <DrawerChildren geoDetails={{ country, currency }} />
         </Drawer>
       </>
     )
   }
   return (
     <Drawer sx={css} variant="permanent" anchor="left">
-      <DrawerChildren />
+      <DrawerChildren geoDetails={{ country, currency }} />
     </Drawer>
   )
 }
 
-const DrawerChildren = () => (
+const DrawerChildren = ({ geoDetails }) => (
   <>
-    <Toolbar sx={{ color: 'text.primary' }}>Final Fantasy XV Packs</Toolbar>
+    <Toolbar sx={{ color: 'text.primary' }}>
+      <Typography>Final Fantasy XV</Typography>
+    </Toolbar>
+
     <Divider />
     <List>
       {MENUS.map(({ label, href }, index) => (
@@ -91,19 +94,19 @@ const DrawerChildren = () => (
       ))}
     </List>
     <Divider />
-    <Box
-      sx={{
-        display: 'flex',
-        justifyContent: 'space-evenly',
-        position: 'absolute',
-        bottom: 0,
-        width: '100%',
-      }}
-      mb={4}
-    >
+    <Stack flexDirection="row" px={2} py={4} gap={4}>
+      <Avatar
+        alt={geoDetails.country}
+        src={`https://countryflagsapi.com/svg/${geoDetails.country}`}
+        sx={{ width: 22, height: 22 }}
+      />
+      {geoDetails.currency}
+    </Stack>
+    <Divider />
+    <Stack mb={4} sx={{ position: 'absolute', bottom: 0, pl: 2 }} gap={2}>
       <FacebookIcon sx={{ fontSize: 26 }} />
       <TwitterIcon sx={{ fontSize: 26 }} />
-    </Box>
+    </Stack>
   </>
 )
 

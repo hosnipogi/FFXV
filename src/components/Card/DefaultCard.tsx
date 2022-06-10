@@ -23,29 +23,29 @@ const DefaultCard = ({
           maxHeight: '200px',
           minHeight: '200px',
           objectFit: 'cover',
-          transition: 'all 0.2s ease',
+          transition: 'filter 0.2s ease',
           '&:hover': {
             filter: 'brightness(85%)',
           },
         }}
         alt={content.title}
       />
-      <CardContent sx={{ minHeight: '120px' }}>
+      <CardContent sx={{ height: 400 }}>
         <Box
           sx={{
             textAlign: 'center',
             boxShadow: '0px 18px 20px -18px #13375e',
-            minHeight: 80,
+            height: '20%',
           }}
         >
-          <Typography component="h5" variant="subtitle1">
+          <Typography component="h5" variant="subtitle2">
             {content.title}
           </Typography>
-          <Typography component="h6" variant="subtitle2" color="info.main">
+          <Typography component="h6" variant="caption" color="info.main">
             {content.description}
           </Typography>
         </Box>
-        <Box height={300}>
+        <Box height="80%">
           <AutoSizer>
             {({ height, width }) => {
               return (
@@ -54,14 +54,17 @@ const DefaultCard = ({
                   width={width}
                   itemSize={60}
                   itemCount={content.items.length}
-                  itemData={content.items}
                 >
                   {(props) => {
-                    const { style, index, data } = props
-                    const item = data[index]
+                    const { style, index } = props
+                    const item = content.items[index]
+                    const title =
+                      item.title.length > 70
+                        ? `${item.title.substring(0, 70)}...`
+                        : item.title
                     return (
                       <ListItems
-                        item={item}
+                        item={{ ...item, title }}
                         style={style}
                         key={index}
                         variant="small"
@@ -92,11 +95,10 @@ const DefaultCard = ({
         <Typography
           variant="subtitle2"
           textAlign="center"
-          color="yellow"
+          color="#333"
           fontWeight={700}
-          sx={{ textShadow: '-1px 1px 2px #5a4300' }}
         >
-          BUY - $ {content.price}
+          USD {content.price}
         </Typography>
       </CardContent>
     </StyledCard>

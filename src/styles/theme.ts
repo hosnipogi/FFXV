@@ -2,6 +2,15 @@ import { createTheme } from '@mui/material/styles'
 import { red } from '@mui/material/colors'
 
 const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 1100,
+      lg: 1400,
+      xl: 1536,
+    },
+  },
   palette: {
     mode: 'dark',
     primary: {
@@ -25,6 +34,13 @@ const theme = createTheme({
   typography: {
     fontFamily: 'Kanit',
   },
+  components: {
+    MuiDivider: {
+      styleOverrides: {
+        root: ({ theme }) => ({ borderColor: theme.palette.border.default }),
+      },
+    },
+  },
 })
 declare module '@mui/material/styles' {
   interface Theme {
@@ -33,7 +49,7 @@ declare module '@mui/material/styles' {
     }
   }
   // allow configuration using `createTheme`
-  interface ThemeOptions {
+  export interface ThemeOptions {
     status?: {
       danger?: string
     }
@@ -41,7 +57,12 @@ declare module '@mui/material/styles' {
 }
 
 declare module '@mui/material/styles/createPalette' {
-  export interface PaletteOptions {
+  interface Palette {
+    border: {
+      [key: string]: string
+    }
+  }
+  interface PaletteOptions {
     border: {
       [key: string]: string
     }

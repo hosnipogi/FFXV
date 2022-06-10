@@ -39,7 +39,11 @@ export async function getStaticProps() {
       const fileDir = `${dir}/${file}`
       const json = fs.readFileSync(fileDir)
       const parsed = JSON.parse(json.toString())
-      siteContents.push(parsed)
+      const content = {
+        ...parsed,
+        sku: file.split('sku-')[1].split('.json')[0],
+      }
+      siteContents.push(content)
     }
   })
 

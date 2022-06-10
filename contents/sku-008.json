@@ -1,523 +1,483 @@
 {
-  "title": "ULTIMATE CATCH UP PACK!",
-  "description": "INSTANT GRATIFICATION!",
-  "image": "https://cdn.epicaction-online.com/webportal/y20m06w4a_basic_ncatchupnow_top_art.png",
+  "title": "NEW FEATURE BUNDLE",
+  "description": "Unlock New Levels!",
+  "image": "https://cdn.epicaction-online.com/webportal/y22m1s2_basic_nfeatbund_top_art.png",
   "items": [
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/favor_prism_btn_icon_05.png",
-          "title": "10,000 Prismatic Gemstones",
-          "itemCount": "x100 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/favor_prism_btn_icon_04.png",
-          "title": "10,000 Iridescent Gemstones",
-          "itemCount": "x100 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/cur_niso_webportal02.png",
-          "title": "Cyber Gil",
-          "itemCount": "x20 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/token_event_ascendsep_gold.png",
-          "title": "Citadel 510 Ultimate Catch Up for Yourself or Your Friend - Instant Citadel &amp; Building Levels, VIP, Research, Astrals, Mounts, Kings of Lucis, &amp; certain Lifetime Bonuses. Tap for Details!",
-          "itemCount": "x1 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/mystery_chest_07.png",
-          "title": "Citadel 510 BONUS Instant Hero Chest",
-          "itemCount": ""
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/mystery_chest_07.png",
-          "title": "Citadel 510 BONUS Chest",
-          "itemCount": ""
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/captured_icon.png",
-          "title": "Instant Banishment",
-          "itemCount": "x10 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_hero_warp.png",
-          "title": "Warp Stone (1 Minute)",
-          "itemCount": "x2 "
-      },
-      {
-          "img": null,
-          "title": "50% Dark March Speed Up",
-          "itemCount": "x2K"
-      },
-      {
-          "img": null,
-          "title": "50% Dark Rally March Speed Up",
-          "itemCount": "x1K"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_boost_speed_march_h.png",
-          "title": "50% March Speed Up",
-          "itemCount": "x100 "
-      },
-      {
-          "img": null,
-          "title": "50% Rally March Speed Up",
-          "itemCount": "x100 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/astral_power_icon.png",
-          "title": "Astral Full Health Talisman",
-          "itemCount": "x20 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/token_event_chocobo_derby_silver.png",
-          "title": "Chocobo Derby Silver Token",
-          "itemCount": "x100K"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/token_moogle_high_tier.png",
-          "title": "Moogle Chocobo Carnival Gold Token",
-          "itemCount": "x777 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/token_moogle_high_tier.png",
-          "title": "Moogle Chocobo Carnival Teleport (4 Hours)",
-          "itemCount": "x5 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/cm_medallions_04.png",
-          "title": "Troop Commendation",
-          "itemCount": "x5KT"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/gear_enchant_reagent_25.png",
-          "title": "Troop Supplies Conversion",
-          "itemCount": "x2KT"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/cm_dw_merc_t01_raider.png",
-          "title": "Dark Mercenary Armaments (T6)",
-          "itemCount": "x9KT"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/mm_egg_iron_giant_epic_icon.png",
-          "title": "Royal Dark Monster Egg",
-          "itemCount": "x8.4T"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/mm_egg_iron_giant_epic_icon.png",
-          "title": "Dark Monster Egg Lv 2",
-          "itemCount": "x7T"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/mm_egg_iron_giant_rare_icon.png",
-          "title": "Dark Monster Egg",
-          "itemCount": "x2.4B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/cm_dw_merc_t01_mage.png",
-          "title": "1,000,000 Dark Mercenary Armaments (T3)",
-          "itemCount": "x1.25M"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/cm_dw_merc_t01_airship.png",
-          "title": "5,000,000 Dark Mercenary Armaments (T2)",
-          "itemCount": "x500K"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/cm_dw_merc_t01_warrior.png",
-          "title": "5,000,000 Dark Mercenary Armaments",
-          "itemCount": "x30M"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/cur_essence_all_elements.png",
-          "title": "Dark Imbued Essence",
-          "itemCount": "x2T"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/cur_essence_all_elements.png",
-          "title": "Dark Essence",
-          "itemCount": "x4T"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/cm_dw_merc_t01_juggernaut.png",
-          "title": "1,000,000 Dark Mercenary Armaments (T4)",
-          "itemCount": "x500K"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/cm_dw_merc_t01_dragoon.png",
-          "title": "Dark Elite Armaments",
-          "itemCount": "x20T"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/token_veteraneos_icon_01_ruby.png",
-          "title": "Regal Guild Emblems",
-          "itemCount": "x30M"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/cm_dw_merc_t01_mech.png",
-          "title": "Dark Mercenary Armaments (T5)",
-          "itemCount": "x250T"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/cur_essence_all_elements.png",
-          "title": "Dark Energized Essence",
-          "itemCount": "x30KT"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/cm_dw_merc_t01_juggernaut.png",
-          "title": "Dark Mercenary Armaments (T4)",
-          "itemCount": "x48.6T"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/token_moogle_high_tier.png",
-          "title": "Moogle Reward Tokens",
-          "itemCount": "x240 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/token_veteraneos_icon_01_diamond.png",
-          "title": "Divine Guild Emblems",
-          "itemCount": "x10M"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/token_veteraneos_icon_02.png",
-          "title": "1,000,000 Divine Guild Conquest Emblems",
-          "itemCount": "x10 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/bm_credits_icon_09.png",
-          "title": "Chaotic Guild Research Moogle Market Credit",
-          "itemCount": "x1M"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_02.png",
-          "title": "5 Minute Guild Conquest Research Speed Up",
-          "itemCount": "x12 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/token_veteraneos_icon_01.png",
-          "title": "1 Regal Guild Conquest Emblems",
-          "itemCount": "x10M"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/mystery_chest_03.png",
-          "title": "Choose a 5* Plate!",
-          "itemCount": ""
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/mystery_chest_02.png",
-          "title": "5 Star Ingredient Chest",
-          "itemCount": ""
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_gil_16.png",
-          "title": "1,000,000 Dark Gil (T7)",
-          "itemCount": "x2 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_energy_16.png",
-          "title": "1,000,000 Dark Energy (T7)",
-          "itemCount": "x2 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_metal_16.png",
-          "title": "1,000,000 Dark Metal (T7)",
-          "itemCount": "x2 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_stone_16.png",
-          "title": "1,000,000 Dark Stone (T7)",
-          "itemCount": "x2 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_gil_15.png",
-          "title": "1,000,000 Dark Gil (T6)",
-          "itemCount": "x1 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_energy_15.png",
-          "title": "1,000,000 Dark Energy (T6)",
-          "itemCount": "x1 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_metal_15.png",
-          "title": "1,000,000 Dark Metal (T6)",
-          "itemCount": "x1 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_stone_15.png",
-          "title": "1,000,000 Dark Stone (T6)",
-          "itemCount": "x1 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_food_16.png",
-          "title": "1,000,000 Dark Food (T7)",
-          "itemCount": "x2 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_food_13.png",
-          "title": "1,000,000 Dark Food (T4)",
-          "itemCount": "x6B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_00.png",
-          "title": "1 Day Dark World Speedup",
-          "itemCount": "x810.19B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_04.png",
-          "title": "1 Day Infused Dark World Speedup",
-          "itemCount": "x167.82B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_05.png",
-          "title": "1 Day Resplendent Speedup",
-          "itemCount": "x203.7T"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_06.png",
-          "title": "1 Day Luminous Speedup",
-          "itemCount": "x1.28B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_gating_divineamulet_09.png",
-          "title": "Grandiose Armaments",
-          "itemCount": "x1 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_food_15.png",
-          "title": "1T Dark Food (T6)",
-          "itemCount": "x380K"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_gil_15.png",
-          "title": "1T Dark Gil (T6)",
-          "itemCount": "x1.7M"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_energy_15.png",
-          "title": "1T Dark Energy (T6)",
-          "itemCount": "x1.7M"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_stone_15.png",
-          "title": "1T Dark Stone (T6)",
-          "itemCount": "x1.7M"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_metal_15.png",
-          "title": "1T Dark Metal (T6)",
-          "itemCount": "x1.7M"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_food_14.png",
-          "title": "10T Dark Food (T5)",
-          "itemCount": "x100 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_metal_14.png",
-          "title": "10T Dark Metal (T5)",
-          "itemCount": "x100 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_gil_14.png",
-          "title": "10T Dark Gil (T5)",
-          "itemCount": "x100 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_stone_14.png",
-          "title": "10T Dark Stone (T5)",
-          "itemCount": "x100 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_energy_14.png",
-          "title": "10T Dark Energy (T5)",
-          "itemCount": "x100 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_gil_13.png",
-          "title": "1,000,000 Dark Gil (T4)",
-          "itemCount": "x4B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_energy_13.png",
-          "title": "1,000,000 Dark Energy (T4)",
-          "itemCount": "x4B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_metal_13.png",
-          "title": "1,000,000 Dark Metal (T4)",
-          "itemCount": "x4B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_stone_13.png",
-          "title": "1,000,000 Dark Stone (T4)",
-          "itemCount": "x4B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_food_12.png",
-          "title": "50B Dark Food (T3)",
-          "itemCount": "x320 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_energy_12.png",
-          "title": "1T Dark Energy (T3)",
-          "itemCount": "x32 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_stone_12.png",
-          "title": "1T Dark Stone (T3)",
-          "itemCount": "x32 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_metal_12.png",
-          "title": "1T Dark Metal (T3)",
-          "itemCount": "x32 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_gil_12.png",
-          "title": "1T Dark Gil (T3)",
-          "itemCount": "x32 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_food_11.png",
-          "title": "1T Dark Food (T2)",
-          "itemCount": "x16K"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_energy_11.png",
-          "title": "1T Dark Energy (T2)",
-          "itemCount": "x32K"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_stone_11.png",
-          "title": "1T Dark Stone (T2)",
-          "itemCount": "x32K"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_metal_11.png",
-          "title": "1T Dark Metal (T2)",
-          "itemCount": "x32K"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_gil_11.png",
-          "title": "1T Dark Gil (T2)",
-          "itemCount": "x32K"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_food_10.png",
-          "title": "1T Dark Food",
-          "itemCount": "x504M"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_energy_10.png",
-          "title": "1T Dark Energy",
-          "itemCount": "x2.26B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_stone_10.png",
-          "title": "1T Dark Stone",
-          "itemCount": "x2.26B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_metal_10.png",
-          "title": "1T Dark Metal",
-          "itemCount": "x2.26B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/notif_cur_gil_10.png",
-          "title": "1T Dark Gil",
-          "itemCount": "x2.26B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/favor_prism_btn_icon_03.png",
-          "title": "500,000,000 Opulent Gemstones",
-          "itemCount": "x24 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/favor_prism_btn_icon_02.png",
-          "title": "1,000,000,000 Luminous Gemstones",
-          "itemCount": "x32K"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/favor_prism_btn_icon.png",
-          "title": "1,000,000,000 Radiant Gemstones",
-          "itemCount": "x41M"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/favor_onyx_btn_icon.png",
-          "title": "1,000,000,000 Dark Gemstones",
-          "itemCount": "x9.44B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/favor_03.png",
-          "title": "20,000,000 Diamonds",
-          "itemCount": "x1 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/favor_02.png",
-          "title": "1,000,000,000 Platinum",
-          "itemCount": "x82K"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_01.png",
-          "title": "1 Hour Prismatic Speedup",
-          "itemCount": "x40 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_01.png",
-          "title": "30 Minutes Prismatic Speedup",
-          "itemCount": "x40 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_01.png",
-          "title": "15 Minutes Prismatic Speedup",
-          "itemCount": "x30 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_01.png",
-          "title": "5 Minutes Prismatic Speedup",
-          "itemCount": "x50 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_08.png",
-          "title": "1000 Days Iridescent Speedup",
-          "itemCount": "x63.66B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_07.png",
-          "title": "30 Days Opulent Speedup",
-          "itemCount": "x2.1T"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_06.png",
-          "title": "30 Days Luminous Speedup",
-          "itemCount": "x13B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_05.png",
-          "title": "30 Days Resplendent Speedup",
-          "itemCount": "x6.8B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_04.png",
-          "title": "30 Days Infused Dark World Speedup",
-          "itemCount": "x22B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_00.png",
-          "title": "30 Days Dark World Speedup",
-          "itemCount": "x210B"
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/pi_blueprint_urban.png",
-          "title": "Royal Building Blueprint",
-          "itemCount": "x260 "
-      },
-      {
-          "img": "https://cdn.epicaction-online.com/webportal/gifts_guild_06.png",
-          "title": "Platinum Gifts for your Guild",
-          "itemCount": "x1 "
-      }
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/favor_prism_btn_icon_05.png",
+      "title": "10,000 Prismatic Gemstones",
+      "itemCount": "x100 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/favor_prism_btn_icon_04.png",
+      "title": "10,000 Iridescent Gemstones",
+      "itemCount": "x100 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/cur_niso_webportal02.png",
+      "title": "Cyber Gil",
+      "itemCount": "x20 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/astral_gating_icon_ifrit_nobg.png",
+      "title": "Ifrit Empowerment Sigil Lv 10",
+      "itemCount": "x607.5M"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/astral_gating_icon_ramuh_nobg.png",
+      "title": "Ramuh Empowerment Sigil Lv 10",
+      "itemCount": "x607.5M"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/astral_power_icon.png",
+      "title": "Astral Full Health Talisman",
+      "itemCount": "x810 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/token_event_chocobo_derby_silver.png",
+      "title": "Chocobo Derby Silver Token",
+      "itemCount": "x100K"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/cm_medallions_04.png",
+      "title": "Troop Commendation",
+      "itemCount": "x5KT"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/gear_enchant_reagent_25.png",
+      "title": "Troop Supplies Conversion",
+      "itemCount": "x2KT"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/cm_dw_merc_t01_raider.png",
+      "title": "Dark Mercenary Armaments (T6)",
+      "itemCount": "x9KT"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/mm_egg_iron_giant_epic_icon.png",
+      "title": "Royal Dark Monster Egg",
+      "itemCount": "x8.4T"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/mm_egg_iron_giant_epic_icon.png",
+      "title": "Dark Monster Egg Lv 2",
+      "itemCount": "x7T"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/mm_egg_iron_giant_rare_icon.png",
+      "title": "Dark Monster Egg",
+      "itemCount": "x2.4B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/cm_dw_merc_t01_mage.png",
+      "title": "1,000,000 Dark Mercenary Armaments (T3)",
+      "itemCount": "x1.25M"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/cm_dw_merc_t01_airship.png",
+      "title": "5,000,000 Dark Mercenary Armaments (T2)",
+      "itemCount": "x500K"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/cm_dw_merc_t01_warrior.png",
+      "title": "5,000,000 Dark Mercenary Armaments",
+      "itemCount": "x30M"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/cur_essence_all_elements.png",
+      "title": "Dark Imbued Essence",
+      "itemCount": "x2T"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/cur_essence_all_elements.png",
+      "title": "Dark Essence",
+      "itemCount": "x4T"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/cm_dw_merc_t01_juggernaut.png",
+      "title": "1,000,000 Dark Mercenary Armaments (T4)",
+      "itemCount": "x500K"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/cm_dw_merc_t01_dragoon.png",
+      "title": "Dark Elite Armaments",
+      "itemCount": "x20T"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/token_veteraneos_icon_01_ruby.png",
+      "title": "Regal Guild Emblems",
+      "itemCount": "x30M"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/cm_dw_merc_t01_mech.png",
+      "title": "Dark Mercenary Armaments (T5)",
+      "itemCount": "x250T"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/cur_essence_all_elements.png",
+      "title": "Dark Energized Essence",
+      "itemCount": "x30KT"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/cm_dw_merc_t01_juggernaut.png",
+      "title": "Dark Mercenary Armaments (T4)",
+      "itemCount": "x48.6T"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/token_moogle_high_tier.png",
+      "title": "Moogle Reward Tokens",
+      "itemCount": "x120 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/token_veteraneos_icon_01_diamond.png",
+      "title": "Divine Guild Emblems",
+      "itemCount": "x10M"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/token_veteraneos_icon_02.png",
+      "title": "1,000,000 Divine Guild Conquest Emblems",
+      "itemCount": "x10 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/bm_credits_icon_09.png",
+      "title": "Chaotic Guild Research Moogle Market Credit",
+      "itemCount": "x1M"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_02.png",
+      "title": "5 Minute Guild Conquest Research Speed Up",
+      "itemCount": "x12 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/token_veteraneos_icon_01.png",
+      "title": "1 Regal Guild Conquest Emblems",
+      "itemCount": "x10M"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/mystery_chest_03.png",
+      "title": "Choose a 5* Plate!",
+      "itemCount": ""
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/mystery_chest_02.png",
+      "title": "5 Star Ingredient Chest",
+      "itemCount": ""
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_gil_16.png",
+      "title": "1,000,000 Dark Gil (T7)",
+      "itemCount": "x2 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_energy_16.png",
+      "title": "1,000,000 Dark Energy (T7)",
+      "itemCount": "x2 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_metal_16.png",
+      "title": "1,000,000 Dark Metal (T7)",
+      "itemCount": "x2 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_stone_16.png",
+      "title": "1,000,000 Dark Stone (T7)",
+      "itemCount": "x2 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_gil_15.png",
+      "title": "1,000,000 Dark Gil (T6)",
+      "itemCount": "x1 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_energy_15.png",
+      "title": "1,000,000 Dark Energy (T6)",
+      "itemCount": "x1 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_metal_15.png",
+      "title": "1,000,000 Dark Metal (T6)",
+      "itemCount": "x1 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_stone_15.png",
+      "title": "1,000,000 Dark Stone (T6)",
+      "itemCount": "x1 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_food_16.png",
+      "title": "1,000,000 Dark Food (T7)",
+      "itemCount": "x2 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_food_13.png",
+      "title": "1,000,000 Dark Food (T4)",
+      "itemCount": "x6B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_00.png",
+      "title": "1 Day Dark World Speedup",
+      "itemCount": "x810.19B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_04.png",
+      "title": "1 Day Infused Dark World Speedup",
+      "itemCount": "x167.82B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_05.png",
+      "title": "1 Day Resplendent Speedup",
+      "itemCount": "x203.7T"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_06.png",
+      "title": "1 Day Luminous Speedup",
+      "itemCount": "x1.28B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_gating_divineamulet_09.png",
+      "title": "Grandiose Armaments",
+      "itemCount": "x1 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_food_15.png",
+      "title": "1T Dark Food (T6)",
+      "itemCount": "x380K"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_gil_15.png",
+      "title": "1T Dark Gil (T6)",
+      "itemCount": "x1.7M"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_energy_15.png",
+      "title": "1T Dark Energy (T6)",
+      "itemCount": "x1.7M"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_stone_15.png",
+      "title": "1T Dark Stone (T6)",
+      "itemCount": "x1.7M"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_metal_15.png",
+      "title": "1T Dark Metal (T6)",
+      "itemCount": "x1.7M"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_food_14.png",
+      "title": "10T Dark Food (T5)",
+      "itemCount": "x100 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_metal_14.png",
+      "title": "10T Dark Metal (T5)",
+      "itemCount": "x100 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_gil_14.png",
+      "title": "10T Dark Gil (T5)",
+      "itemCount": "x100 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_stone_14.png",
+      "title": "10T Dark Stone (T5)",
+      "itemCount": "x100 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_energy_14.png",
+      "title": "10T Dark Energy (T5)",
+      "itemCount": "x100 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_gil_13.png",
+      "title": "1,000,000 Dark Gil (T4)",
+      "itemCount": "x4B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_energy_13.png",
+      "title": "1,000,000 Dark Energy (T4)",
+      "itemCount": "x4B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_metal_13.png",
+      "title": "1,000,000 Dark Metal (T4)",
+      "itemCount": "x4B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_stone_13.png",
+      "title": "1,000,000 Dark Stone (T4)",
+      "itemCount": "x4B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_food_12.png",
+      "title": "50B Dark Food (T3)",
+      "itemCount": "x320 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_energy_12.png",
+      "title": "1T Dark Energy (T3)",
+      "itemCount": "x32 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_stone_12.png",
+      "title": "1T Dark Stone (T3)",
+      "itemCount": "x32 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_metal_12.png",
+      "title": "1T Dark Metal (T3)",
+      "itemCount": "x32 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_gil_12.png",
+      "title": "1T Dark Gil (T3)",
+      "itemCount": "x32 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_food_11.png",
+      "title": "1T Dark Food (T2)",
+      "itemCount": "x16K"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_energy_11.png",
+      "title": "1T Dark Energy (T2)",
+      "itemCount": "x32K"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_stone_11.png",
+      "title": "1T Dark Stone (T2)",
+      "itemCount": "x32K"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_metal_11.png",
+      "title": "1T Dark Metal (T2)",
+      "itemCount": "x32K"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_gil_11.png",
+      "title": "1T Dark Gil (T2)",
+      "itemCount": "x32K"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_food_10.png",
+      "title": "1T Dark Food",
+      "itemCount": "x504M"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_energy_10.png",
+      "title": "1T Dark Energy",
+      "itemCount": "x2.26B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_stone_10.png",
+      "title": "1T Dark Stone",
+      "itemCount": "x2.26B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_metal_10.png",
+      "title": "1T Dark Metal",
+      "itemCount": "x2.26B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/notif_cur_gil_10.png",
+      "title": "1T Dark Gil",
+      "itemCount": "x2.26B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/favor_prism_btn_icon_03.png",
+      "title": "500,000,000 Opulent Gemstones",
+      "itemCount": "x24 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/favor_prism_btn_icon_02.png",
+      "title": "1,000,000,000 Luminous Gemstones",
+      "itemCount": "x32K"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/favor_prism_btn_icon.png",
+      "title": "1,000,000,000 Radiant Gemstones",
+      "itemCount": "x41M"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/favor_onyx_btn_icon.png",
+      "title": "1,000,000,000 Dark Gemstones",
+      "itemCount": "x9.44B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/favor_03.png",
+      "title": "20,000,000 Diamonds",
+      "itemCount": "x1 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/favor_02.png",
+      "title": "1,000,000,000 Platinum",
+      "itemCount": "x82K"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_01.png",
+      "title": "1 Hour Prismatic Speedup",
+      "itemCount": "x40 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_01.png",
+      "title": "30 Minutes Prismatic Speedup",
+      "itemCount": "x40 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_01.png",
+      "title": "15 Minutes Prismatic Speedup",
+      "itemCount": "x30 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_01.png",
+      "title": "5 Minutes Prismatic Speedup",
+      "itemCount": "x50 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_08.png",
+      "title": "1000 Days Iridescent Speedup",
+      "itemCount": "x63.66B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_07.png",
+      "title": "30 Days Opulent Speedup",
+      "itemCount": "x2.1T"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_06.png",
+      "title": "30 Days Luminous Speedup",
+      "itemCount": "x13B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_05.png",
+      "title": "30 Days Resplendent Speedup",
+      "itemCount": "x6.8B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_04.png",
+      "title": "30 Days Infused Dark World Speedup",
+      "itemCount": "x22B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_speedup_dw_00.png",
+      "title": "30 Days Dark World Speedup",
+      "itemCount": "x210B"
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_hero_warp.png",
+      "title": "Warp Stone (1 Minute)",
+      "itemCount": "x1 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/pi_blueprint_urban.png",
+      "title": "Royal Building Blueprint",
+      "itemCount": "x260 "
+    },
+    {
+      "img": "https://cdn.epicaction-online.com/webportal/gifts_guild_06.png",
+      "title": "Platinum Gifts for your Guild",
+      "itemCount": "x1 "
+    }
   ],
-  "price": 99.99
+  "price": 50.5
 }

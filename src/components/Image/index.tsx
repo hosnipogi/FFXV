@@ -17,8 +17,11 @@ const ImageComponent: React.FC<ImgHTMLAttributes<any> & { radius?: number }> = (
         width="100%"
         height="100%"
         component="img"
-        sx={{ objectFit: 'cover', borderRadius: props.radius || 3 }}
-        src={`/images${props.src}`}
+        sx={{
+          objectFit: 'contain',
+          borderRadius: props.radius || 3,
+        }}
+        src={props.src}
         alt={props.alt ? props.alt : 'Generic Image'}
       />
     </Box>
