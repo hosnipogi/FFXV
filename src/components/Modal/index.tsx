@@ -1,11 +1,15 @@
-import React from 'react'
-import Box from '@mui/material/Stack'
+import React, { useState } from 'react'
+import Button from '@mui/material/Button'
 import Dialog from '@mui/material/Dialog'
+import DialogActions from '@mui/material/DialogActions'
 import DialogContent from '@mui/material/DialogContent'
 import Typography from '@mui/material/Typography'
-import { styled } from "@mui/material/styles";
+import Stack from '@mui/material/Stack'
+import { styled } from '@mui/material/styles'
 import IconButton from '@mui/material/IconButton'
 import CloseIcon from '@mui/icons-material/Close'
+import useModal from 'hooks/useModal'
+import Checkout from 'components/Checkout'
 
 import type { ModalOptionsType } from 'types'
 
@@ -16,18 +20,18 @@ type Props = {
   setModalClose: () => void
 }
 
-const StyledDialog = styled(Dialog)<{ bgimage?: string }>`
+const StyledDialog = styled(Dialog)<{ image?: string }>`
   backdrop-filter: blur(4px) brightness(0.6);
   & .MuiDialog-paperScrollPaper {
     border-radius: 18px;
-    background-image: url('${({ bgimage }) => bgimage}');
+    background-image: url('${({ image }) => image}');
     background-position: center;
     background-size: cover;
     max-height: 82vh;
   }
 `
 
-const ModalHeader = styled(Box)`
+const ModalHeader = styled(Stack)`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -43,7 +47,31 @@ const ModalComponent: React.FC<Props> = ({
   setModalClose,
   modalOptions,
 }) => {
-  const { title, bgimage } = modalOptions
+  const { title, image, header, price, sku, description } = modalOptions
+  const [modal, setModal] = useState<React.ReactNode>()
+  const { setModalOptions, setModalOpen } = useModal(modal)
+
+  const handleCheckout = () => {
+    setModalOptions({
+      header: 'Checkout',
+      title,
+      price,
+      image,
+      sku,
+      description,
+    })
+    setModal(
+      <Checkout
+        dataTitle={title}
+        dataDescription={description}
+        dataPrice={price}
+        dataImage={image}
+        dataSku={sku}
+      />
+    )
+    setModalOpen()
+  }
+
   return (
     <StyledDialog
       open={open}
@@ -51,21 +79,48 @@ const ModalComponent: React.FC<Props> = ({
       scroll="paper"
       aria-labelledby="scroll-dialog-title"
       aria-describedby="scroll-dialog-description"
-      bgimage={bgimage}
+      image={header === 'Checkout' ? null : image}
     >
       <ModalHeader>
-        <Typography variant="h6" sx={{ fontWeight: 700, maxWidth: '75%' }}>
-          {title}
+        <Typography
+          variant="subtitle1"
+          sx={{ fontWeight: 700, maxWidth: '75%' }}
+        >
+          {header} :: SKU-{sku}
         </Typography>
-        <Box>
-          <IconButton aria-label="Close" onClick={setModalClose}>
-            <CloseIcon />
-          </IconButton>
-        </Box>
+        <IconButton aria-label="Close" onClick={setModalClose}>
+          <CloseIcon />
+        </IconButton>
       </ModalHeader>
       <DialogContent sx={{ backdropFilter: 'contrast(0.5) brightness(0.3)' }}>
         {children}
       </DialogContent>
+      {header !== 'Checkout' && (
+        <DialogActions sx={{ p: 0 }}>
+          <Button
+            sx={{
+              borderTopLeftRadius: 0,
+              borderTopRightRadius: 0,
+              width: '100%',
+              backgroundImage:
+                'linear-gradient(180deg, #ffd775 12.02%, #feb528 54.17%, #f7811e 130.17%)',
+              p: '16px 8px',
+              webkitTransition: 'background-image 0.2s ease-in-out',
+              transition: 'background-image 0.2s ease-in-out',
+              color: '#333',
+              fontWeight: 700,
+              fontSize: '14px',
+              '&:hover': {
+                backgroundImage:
+                  'linear-gradient(270deg, #ffd775 12.02%, #feb528 54.17%, #f7811e 130.17%)',
+              },
+            }}
+            onClick={() => handleCheckout()}
+          >
+            USD {price}
+          </Button>
+        </DialogActions>
+      )}
     </StyledDialog>
   )
 }

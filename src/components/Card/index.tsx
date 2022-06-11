@@ -1,13 +1,14 @@
-import React, { useCallback, useState } from 'react'
+import React, { MouseEvent, useCallback, useState } from 'react'
+// import Box from '@mui/material/Box'
 import Checkout from 'components/Checkout'
 import FeaturedCard from './FeaturedCard'
 import DefaultCard from './DefaultCard'
-import type { Content } from 'types'
+import type { ContentType } from 'types'
 import { List } from 'components/List'
 import useModal from 'hooks/useModal'
 
 type Props = {
-  content: Content
+  content: ContentType
   variant?: 'featured' | 'default'
 }
 
@@ -16,23 +17,32 @@ const CustomCard: React.FC<Props> = ({ content, variant = 'default' }) => {
   const { setModalOpen, setModalOptions } = useModal(modal)
 
   const handleBuy = (
-    e,
-    { dataTitle, dataPrice, dataDescription, dataImage }
+    e: MouseEvent,
+    {
+      title,
+      price,
+      description,
+      image,
+      sku,
+    }: Omit<ContentType, 'items' | 'price'> & { price: string }
   ) => {
     e.stopPropagation()
     setModal(
       <Checkout
-        dataTitle={dataTitle}
-        dataDescription={dataDescription}
-        dataPrice={dataPrice}
-        dataImage={dataImage}
+        dataTitle={title}
+        dataDescription={description}
+        dataPrice={price}
+        dataImage={image}
+        dataSku={sku}
       />
     )
     setModalOptions({
-      title: 'Checkout',
-      dataTitle,
-      dataPrice,
-      dataDescription,
+      header: 'Checkout',
+      title,
+      price,
+      image,
+      sku,
+      description,
     })
     setModalOpen()
   }
@@ -46,30 +56,29 @@ const CustomCard: React.FC<Props> = ({ content, variant = 'default' }) => {
       content={content}
       handleBuy={(e) =>
         handleBuy(e, {
-          dataTitle: content.title,
-          dataPrice: content.price,
-          dataDescription: content.description,
-          dataImage: content.image,
+          title: content.title,
+          price: content.price.toPrecision(4),
+          description: content.description,
+          image: content.image,
+          sku: content.sku,
         })
       }
     />
   )
 }
 
-type WithModalProps = {
-  content: any
-  variant?: any
-}
-
-const WithModal: React.FC<WithModalProps> = ({ content, variant }) => {
+const WithModal: React.FC<Props> = ({ content, variant }) => {
   const [modal, setModal] = useState<React.ReactNode>()
   const { setModalOpen, setModalOptions } = useModal(modal)
 
   const handleModal = useCallback(
     (node: React.ReactNode) => {
-      const { title, image } = content
       setModal(node)
-      setModalOptions({ title, bgimage: image })
+      setModalOptions({
+        ...content,
+        price: content.price.toPrecision(4),
+        header: content.title,
+      })
       setModalOpen()
     },
     [setModalOpen, setModalOptions, content]

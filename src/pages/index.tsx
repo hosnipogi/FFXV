@@ -9,7 +9,13 @@ import IconWithLabel from 'components/IconWithLabel'
 import Packs from 'components/Packs'
 import FeaturedCarousel from 'components/Carousel'
 
-const Home = ({ siteContents }) => {
+import type { ContentType } from 'types'
+
+type Props = {
+  siteContents: ContentType[]
+}
+
+const Home = ({ siteContents }: Props) => {
   return (
     <>
       <IconWithLabel
@@ -31,7 +37,7 @@ const Home = ({ siteContents }) => {
 
 export async function getStaticProps() {
   const dir = path.resolve(process.cwd() + '/contents')
-  const siteContents = []
+  const siteContents: ContentType[] = []
 
   const files = fs.readdirSync(dir)
   files.forEach((file) => {

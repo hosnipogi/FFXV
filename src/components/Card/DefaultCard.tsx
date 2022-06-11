@@ -1,3 +1,5 @@
+import type { MouseEvent } from 'react'
+import Button from '@mui/material/Button'
 import Box from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
@@ -6,19 +8,19 @@ import { StyledCard } from './styles'
 import AutoSizer from 'react-virtualized-auto-sizer'
 import { FixedSizeList } from 'react-window'
 import { ListItems } from 'components/List'
+import { ContentType } from 'types'
 
-const DefaultCard = ({
-  content,
-  handleBuy,
-}: {
-  content: any
-  handleBuy: (e: any) => void
-}) => {
+type Props = {
+  content: ContentType
+  handleBuy: (e: MouseEvent) => void
+}
+
+const DefaultCard = ({ content, handleBuy }: Props) => {
   return (
     <StyledCard>
       <CardMedia
         component="img"
-        image={content.image as string}
+        image={content.image}
         sx={{
           maxHeight: '200px',
           minHeight: '200px',
@@ -77,29 +79,29 @@ const DefaultCard = ({
           </AutoSizer>
         </Box>
       </CardContent>
-      <CardContent
-        onClick={handleBuy}
-        sx={{
-          backgroundImage:
-            'linear-gradient(144.7deg, rgb(240, 211, 135) -10.98%, rgb(205, 155, 26) 113.17%)',
-          p: '16px 8px',
-          '-webkit-transition': 'background-image 0.2s ease-in-out',
-          transition: 'background-image 0.2s ease-in-out',
-          '&:hover': {
+      <CardContent sx={{ p: 0, '&:last-child': { pb: 0 } }}>
+        <Button
+          onClick={handleBuy}
+          sx={{
+            borderTopLeftRadius: 0,
+            borderTopRightRadius: 0,
+            width: '100%',
             backgroundImage:
-              'linear-gradient(320.7deg, rgb(240, 211, 135) -10.98%, rgb(205, 155, 26) 113.17%)',
-          },
-          '&:last-child': { pb: '16px' },
-        }}
-      >
-        <Typography
-          variant="subtitle2"
-          textAlign="center"
-          color="#333"
-          fontWeight={700}
+              'linear-gradient(180deg, #ffd775 12.02%, #feb528 54.17%, #f7811e 130.17%)',
+            p: '16px 8px',
+            webkitTransition: 'background-image 0.2s ease-in-out',
+            transition: 'background-image 0.2s ease-in-out',
+            color: '#333',
+            fontWeight: 700,
+            fontSize: '14px',
+            '&:hover': {
+              backgroundImage:
+                'linear-gradient(270deg, #ffd775 12.02%, #feb528 54.17%, #f7811e 130.17%)',
+            },
+          }}
         >
-          USD {content.price}
-        </Typography>
+          USD {content.price.toPrecision(4)}
+        </Button>
       </CardContent>
     </StyledCard>
   )

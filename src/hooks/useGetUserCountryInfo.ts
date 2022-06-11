@@ -12,12 +12,11 @@ const useGetUserCountryInfo = () => {
     try {
       const getUserCountry = async () => {
         const { data } = await axios.get('https://ipapi.co/json/')
-        console.log({ data })
         setCountry(data)
       }
       getUserCountry()
     } catch (e) {
-      setCountry({ country: 'PH' })
+      setCountry({ country: 'PH', currency: 'PHP' })
     }
   }, [])
   return country

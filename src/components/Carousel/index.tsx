@@ -1,9 +1,10 @@
 import React from 'react'
 import Carousel from 'react-material-ui-carousel'
 import Card from 'components/Card'
+import type { ContentType } from 'types'
 
 type Props = {
-  contents: any[]
+  contents: ContentType[]
 }
 
 const CarouselComponent: React.FC<Props> = ({ contents }) => {

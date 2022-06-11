@@ -8,8 +8,12 @@ import useIsMobile from 'hooks/useIsMobile'
 import AutoSizer from 'react-virtualized-auto-sizer'
 import { FixedSizeList } from 'react-window'
 import { ListItems } from 'components/List'
+import type { ContentType } from 'types'
 
-const FeaturedCard = ({ content }: { content: any }) => {
+type Props = {
+  content: ContentType
+}
+const FeaturedCard = ({ content }: Props) => {
   const isMobile = useIsMobile()
 
   return (
@@ -30,8 +34,8 @@ const FeaturedCard = ({ content }: { content: any }) => {
           >
             <CardMedia
               component="img"
-              src={content.image as string}
-              alt={content.image as string}
+              src={content.image}
+              alt={content.image}
               sx={{
                 width: '100%',
                 height: '100%',
@@ -67,7 +71,7 @@ const FeaturedCard = ({ content }: { content: any }) => {
                 {content.description}
               </Typography>
               <Typography component="h6" variant="subtitle1" color="gold">
-                USD {content.price} - SKU-{content.sku}
+                USD {content.price.toPrecision(4)}
               </Typography>
             </Box>
             <Divider />
@@ -121,8 +125,8 @@ const FeaturedCard = ({ content }: { content: any }) => {
           >
             <CardMedia
               component="img"
-              src={content.image as string}
-              alt={content.image as string}
+              src={content.image}
+              alt={content.image}
               sx={{
                 width: '100%',
                 height: '100%',

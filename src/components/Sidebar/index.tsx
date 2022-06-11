@@ -72,42 +72,52 @@ function Sidebar({ width = 240 }: DrawerProps) {
   )
 }
 
-const DrawerChildren = ({ geoDetails }) => (
-  <>
-    <Toolbar sx={{ color: 'text.primary' }}>
-      <Typography>Final Fantasy XV</Typography>
-    </Toolbar>
+const DrawerChildren = ({ geoDetails }) => {
+  const isMobile = useIsMobile()
 
-    <Divider />
-    <List>
-      {MENUS.map(({ label, href }, index) => (
-        <ListItem key={label} disablePadding>
-          <Link href={href} passHref>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <HomeIcon /> : <QuizIcon />}
-              </ListItemIcon>
-              <ListItemText primary={label} />
-            </ListItemButton>
-          </Link>
-        </ListItem>
-      ))}
-    </List>
-    <Divider />
-    <Stack flexDirection="row" px={2} py={4} gap={4}>
-      <Avatar
-        alt={geoDetails.country}
-        src={`https://countryflagsapi.com/svg/${geoDetails.country}`}
-        sx={{ width: 22, height: 22 }}
+  return (
+    <>
+      <Toolbar sx={{ color: 'text.primary' }}>
+        <Typography>Final Fantasy XV</Typography>
+      </Toolbar>
+
+      <Divider
+        sx={{ borderColor: isMobile ? 'border.secondary' : 'border.default' }}
       />
-      {geoDetails.currency}
-    </Stack>
-    <Divider />
-    <Stack mb={4} sx={{ position: 'absolute', bottom: 0, pl: 2 }} gap={2}>
-      <FacebookIcon sx={{ fontSize: 26 }} />
-      <TwitterIcon sx={{ fontSize: 26 }} />
-    </Stack>
-  </>
-)
+      <List>
+        {MENUS.map(({ label, href }, index) => (
+          <ListItem key={label} disablePadding>
+            <Link href={href} passHref>
+              <ListItemButton>
+                <ListItemIcon>
+                  {index % 2 === 0 ? <HomeIcon /> : <QuizIcon />}
+                </ListItemIcon>
+                <ListItemText primary={label} />
+              </ListItemButton>
+            </Link>
+          </ListItem>
+        ))}
+      </List>
+      <Divider
+        sx={{ borderColor: isMobile ? 'border.secondary' : 'border.default' }}
+      />
+      <Stack flexDirection="row" px={2} py={4} gap={4}>
+        <Avatar
+          alt={geoDetails.country}
+          src={`https://countryflagsapi.com/svg/${geoDetails.country}`}
+          sx={{ width: 22, height: 22 }}
+        />
+        {geoDetails.currency}
+      </Stack>
+      <Divider
+        sx={{ borderColor: isMobile ? 'border.secondary' : 'border.default' }}
+      />
+      <Stack mb={4} sx={{ position: 'absolute', bottom: 0, pl: 2 }} gap={2}>
+        <FacebookIcon sx={{ fontSize: 26 }} />
+        <TwitterIcon sx={{ fontSize: 26 }} />
+      </Stack>
+    </>
+  )
+}
 
 export default Sidebar

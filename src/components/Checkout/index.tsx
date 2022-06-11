@@ -11,10 +11,11 @@ type Props = {
   dataDescription: string
   dataPrice: string
   dataImage: string
+  dataSku: string
 }
 
 export default function CustomizedDialogs(props: Props) {
-  const { dataImage, dataTitle, dataDescription, dataPrice } = props
+  const { dataImage, dataTitle, dataDescription, dataPrice, dataSku } = props
   const isMobile = useIsMobile()
 
   return (
@@ -43,13 +44,18 @@ export default function CustomizedDialogs(props: Props) {
           >{`USD ${dataPrice}`}</Typography>
         </Box>
       </Box>
-      <Divider />
+      <Divider sx={{ borderColor: 'border.secondary' }} />
       <Typography gutterBottom py={4}>
         Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
         Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
       </Typography>
-      <Divider />
-      <PaypalButton />
+      <Divider sx={{ borderColor: 'border.secondary' }} />
+      <PaypalButton
+        sku={dataSku}
+        price={dataPrice}
+        description={dataDescription}
+        title={dataTitle}
+      />
     </div>
   )
 }
