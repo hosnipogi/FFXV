@@ -1,7 +1,7 @@
 enum Links {
   HOME = 'Home',
   STORE = 'Store',
-  ABOUT = 'About',
+  ABOUT = 'FAQ',
   PACK = 'Pack',
 }
 
@@ -13,10 +13,9 @@ const Nav = [
   },
   {
     label: Links.ABOUT,
-    href: `/about`,
-    icon: 'Home',
+    href: `/faq`,
+    icon: 'Quiz',
   },
 ]
 
-export const Pack = Links.PACK.toLowerCase()
 export default Nav

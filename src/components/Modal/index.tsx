@@ -101,6 +101,8 @@ const ModalComponent: React.FC<Props> = ({
             sx={{
               borderTopLeftRadius: 0,
               borderTopRightRadius: 0,
+              borderBottomLeftRadius: 18,
+              borderBottomRightRadius: 18,
               width: '100%',
               backgroundImage:
                 'linear-gradient(180deg, #ffd775 12.02%, #feb528 54.17%, #f7811e 130.17%)',

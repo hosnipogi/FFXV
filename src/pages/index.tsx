@@ -23,7 +23,7 @@ const Home = ({ siteContents }: Props) => {
         label="Featured"
       />
       <FeaturedCarousel contents={siteContents} />
-      <Divider variant="middle" sx={{ marginY: 6 }} />
+      <Divider sx={{ marginY: 6 }} />
       <IconWithLabel
         iconComponent={
           <StorefrontIcon sx={{ marginRight: 1 }} color="warning" />

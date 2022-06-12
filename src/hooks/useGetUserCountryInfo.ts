@@ -7,7 +7,7 @@ type CountryProps = Partial<{
 }>
 
 const useGetUserCountryInfo = () => {
-  const [country, setCountry] = useState<CountryProps>({} as CountryProps)
+  const [country, setCountry] = useState<CountryProps>({})
   useEffect(() => {
     try {
       const getUserCountry = async () => {

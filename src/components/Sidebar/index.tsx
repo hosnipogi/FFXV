@@ -1,7 +1,5 @@
 import React, { useContext } from 'react'
-import Avatar from '@mui/material/Avatar'
 import Drawer from '@mui/material/Drawer'
-import Toolbar from '@mui/material/Toolbar'
 import List from '@mui/material/List'
 import Divider from '@mui/material/Divider'
 import ListItem from '@mui/material/ListItem'
@@ -10,8 +8,7 @@ import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
 import HomeIcon from '@mui/icons-material/Home'
 import QuizIcon from '@mui/icons-material/Quiz'
-import Typography from '@mui/material/Typography'
-import Stack from '@mui/material/Stack'
+import { NoctisIcon } from 'components/Icons'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import { MenuContext } from 'providers/menuProvider'
@@ -25,7 +22,7 @@ type DrawerProps = {
 }
 
 function Sidebar({ width = 240 }: DrawerProps) {
-  const { menuIsOpen, setMenuOpen, country, currency } = useContext(MenuContext)
+  const { menuIsOpen, setMenuOpen } = useContext(MenuContext)
   const handleDrawerToggle = () => {
     setMenuOpen(!menuIsOpen)
   }
@@ -60,26 +57,40 @@ function Sidebar({ width = 240 }: DrawerProps) {
           }}
           sx={css}
         >
-          <DrawerChildren geoDetails={{ country, currency }} />
+          <DrawerChildren />
         </Drawer>
       </>
     )
   }
   return (
     <Drawer sx={css} variant="permanent" anchor="left">
-      <DrawerChildren geoDetails={{ country, currency }} />
+      <DrawerChildren />
     </Drawer>
   )
 }
 
-const DrawerChildren = ({ geoDetails }) => {
+const DrawerChildren = () => {
   const isMobile = useIsMobile()
 
   return (
     <>
-      <Toolbar sx={{ color: 'text.primary' }}>
-        <Typography>Final Fantasy XV</Typography>
-      </Toolbar>
+      <ListItem>
+        <ListItemIcon>
+          <NoctisIcon width={38} height={38} />
+        </ListItemIcon>
+        <ListItemText
+          primaryTypographyProps={{
+            color: 'text.primary',
+            variant: 'subtitle2',
+          }}
+          secondaryTypographyProps={{
+            color: 'text.primary',
+            variant: 'subtitle2',
+          }}
+          primary="Final Fantasy XV:"
+          secondary="A New Empire"
+        />
+      </ListItem>
 
       <Divider
         sx={{ borderColor: isMobile ? 'border.secondary' : 'border.default' }}
@@ -101,21 +112,26 @@ const DrawerChildren = ({ geoDetails }) => {
       <Divider
         sx={{ borderColor: isMobile ? 'border.secondary' : 'border.default' }}
       />
-      <Stack flexDirection="row" px={2} py={4} gap={4}>
-        <Avatar
-          alt={geoDetails.country}
-          src={`https://countryflagsapi.com/svg/${geoDetails.country}`}
-          sx={{ width: 22, height: 22 }}
-        />
-        {geoDetails.currency}
-      </Stack>
-      <Divider
-        sx={{ borderColor: isMobile ? 'border.secondary' : 'border.default' }}
-      />
-      <Stack mb={4} sx={{ position: 'absolute', bottom: 0, pl: 2 }} gap={2}>
-        <FacebookIcon sx={{ fontSize: 26 }} />
-        <TwitterIcon sx={{ fontSize: 26 }} />
-      </Stack>
+      <List sx={{ position: 'absolute', bottom: 0 }}>
+        <ListItem disablePadding>
+          <Link href={''} passHref>
+            <ListItemButton>
+              <ListItemIcon>
+                <FacebookIcon sx={{ fontSize: 26 }} />
+              </ListItemIcon>
+            </ListItemButton>
+          </Link>
+        </ListItem>
+        <ListItem disablePadding>
+          <Link href={''} passHref>
+            <ListItemButton>
+              <ListItemIcon>
+                <TwitterIcon sx={{ fontSize: 26 }} />
+              </ListItemIcon>
+            </ListItemButton>
+          </Link>
+        </ListItem>
+      </List>
     </>
   )
 }

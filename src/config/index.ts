@@ -1,2 +1,2 @@
-export { default as MENUS, Pack as PACKLINK } from './menu'
+export { default as MENUS } from './menu'
 export { FBConfig } from './facebookChat'
