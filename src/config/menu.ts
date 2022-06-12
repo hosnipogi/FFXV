@@ -1,8 +1,6 @@
-enum Links {
+export enum Links {
   HOME = 'Home',
-  STORE = 'Store',
-  ABOUT = 'FAQ',
-  PACK = 'Pack',
+  FAQ = 'FAQ',
 }
 
 const Nav = [
@@ -12,7 +10,7 @@ const Nav = [
     icon: 'Home',
   },
   {
-    label: Links.ABOUT,
+    label: Links.FAQ,
     href: `/faq`,
     icon: 'Quiz',
   },

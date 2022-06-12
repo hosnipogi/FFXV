@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState, useCallback } from 'react'
 import ModalComponent from 'components/Modal'
 import { ModalOptionsType } from 'types'
 
@@ -11,6 +11,7 @@ interface IModalContext {
   setModalOpen: () => void
   setModalNode: (node: React.ReactNode) => void
   setModalOptions: ({}: ModalOptionsType) => void
+  options: ModalOptionsType
 }
 
 export const ModalContext = createContext<IModalContext>(undefined)
@@ -20,21 +21,34 @@ export const ModalProvider: React.FC<Props> = ({ children }) => {
   const [open, setOpen] = useState(false)
   const [options, setOptions] = useState<ModalOptionsType>({})
 
-  const setModalClose = () => {
+  const setModalClose = useCallback(() => {
     setOpen(false)
-  }
+    setTimeout(() => {
+      setModalNode(null)
+      setOptions({})
+    }, 800)
+  }, [])
 
-  const setModalOpen = () => {
+  const setModalOpen = useCallback(() => {
     setOpen(true)
-  }
+  }, [])
 
-  const setModalOptions: IModalContext['setModalOptions'] = (options) => {
-    setOptions(options)
-  }
+  const setModalOptions: IModalContext['setModalOptions'] = useCallback(
+    (opts) => {
+      setOptions(opts)
+    },
+    []
+  )
 
   return (
     <ModalContext.Provider
-      value={{ setModalClose, setModalOpen, setModalNode, setModalOptions }}
+      value={{
+        setModalClose,
+        setModalOpen,
+        setModalNode,
+        setModalOptions,
+        options,
+      }}
     >
       {children}
       <ModalComponent

@@ -1,4 +1,4 @@
-import type { MouseEvent } from 'react'
+import React, { MouseEvent } from 'react'
 import Button from '@mui/material/Button'
 import Box from '@mui/material/Box'
 import CardContent from '@mui/material/CardContent'
@@ -6,9 +6,9 @@ import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import { StyledCard } from './styles'
 import AutoSizer from 'react-virtualized-auto-sizer'
-import { FixedSizeList } from 'react-window'
+import { FixedSizeList, areEqual } from 'react-window'
 import { ListItems } from 'components/List'
-import { ContentType } from 'types'
+import type { ContentType, RowProps } from 'types'
 
 type Props = {
   content: ContentType
@@ -56,23 +56,9 @@ const DefaultCard = ({ content, handleBuy }: Props) => {
                   width={width}
                   itemSize={60}
                   itemCount={content.items.length}
+                  itemData={content.items}
                 >
-                  {(props) => {
-                    const { style, index } = props
-                    const item = content.items[index]
-                    const title =
-                      item.title.length > 70
-                        ? `${item.title.substring(0, 70)}...`
-                        : item.title
-                    return (
-                      <ListItems
-                        item={{ ...item, title }}
-                        style={style}
-                        key={index}
-                        variant="small"
-                      />
-                    )
-                  }}
+                  {RowsMemoized}
                 </FixedSizeList>
               )
             }}
@@ -106,5 +92,22 @@ const DefaultCard = ({ content, handleBuy }: Props) => {
     </StyledCard>
   )
 }
+
+const RowsMemoized = React.memo<RowProps>((props) => {
+  const { style, index, data } = props
+  const item = data[index]
+  const title =
+    item.title.length > 70 ? `${item.title.substring(0, 70)}...` : item.title
+  return (
+    <ListItems
+      item={{ ...item, title }}
+      style={style}
+      key={index}
+      variant="small"
+    />
+  )
+}, areEqual)
+
+RowsMemoized.displayName = 'DefaultCardListRows'
 
 export default DefaultCard

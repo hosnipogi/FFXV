@@ -30,6 +30,9 @@ const theme = createTheme({
       default: '#132f4c',
       secondary: '#c2e0ff14',
     },
+    facebook: {
+      default: '#4C7DDC',
+    },
   },
   typography: {
     fontFamily: 'Kanit',
@@ -61,9 +64,15 @@ declare module '@mui/material/styles/createPalette' {
     border: {
       [key: string]: string
     }
+    facebook: {
+      [key: string]: string
+    }
   }
   interface PaletteOptions {
     border: {
+      [key: string]: string
+    }
+    facebook: {
       [key: string]: string
     }
   }

@@ -1,9 +1,11 @@
 import React from 'react'
+import { useTheme } from '@mui/material/styles'
 import { MessengerChat } from 'react-messenger-chat-plugin'
-import { FBConfig } from 'config/facebookChat'
+import { FACEBOOK_ID } from 'config'
 
 let url = ''
 const FBMessenger = () => {
+  const theme = useTheme()
   if (typeof window !== 'undefined') {
     url = window.location.hostname
   }
@@ -11,10 +13,10 @@ const FBMessenger = () => {
   if (process.env.NODE_ENV !== 'development' && url !== 'localhost') {
     return (
       <MessengerChat
-        pageId={FBConfig.ID}
-        themeColor="#4C7DDC"
-        loggedInGreeting="loggedInGreeting"
-        loggedOutGreeting="loggedOutGreeting"
+        pageId={FACEBOOK_ID}
+        themeColor={theme.palette.facebook.default}
+        loggedInGreeting=""
+        loggedOutGreeting=""
         greetingDialogDisplay={'show'}
         debugMode={true}
         onMessengerShow={() => {

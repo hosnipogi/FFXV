@@ -6,10 +6,11 @@ import {
 import Box from '@mui/material/Box'
 import Stack from '@mui/material/Stack'
 import CircularProgress from '@mui/material/CircularProgress'
+import { PAYPAL_CLIENT_ID } from 'config'
+import useModal from 'hooks/useModal'
 
 const paypalConfig = {
-  'client-id':
-    'AeprjWcnsX-jJX6MdLjSNztANSDTamgokeOdBSQrcojtvjCNyUw3CWiCRakdksC2OQEdmmlWj88hZAcn',
+  'client-id': PAYPAL_CLIENT_ID,
   currency: 'USD',
   intent: 'capture',
 }
@@ -23,11 +24,12 @@ type Props = {
 
 const PaypalButton = ({ sku, price }: Props) => {
   const [{ isPending }] = usePayPalScriptReducer()
+  const { setModalOptions } = useModal()
   return (
     <Stack
       alignItems="center"
       justifyContent="center"
-      mt={2}
+      mt="12px"
       mb={0}
       sx={{ height: 56, width: '100%' }}
     >
@@ -44,7 +46,6 @@ const PaypalButton = ({ sku, price }: Props) => {
               shape: 'rect',
             }}
             disabled={false}
-            // forceReRender={[amount, currency, style]}
             fundingSource={undefined}
             createOrder={(data, actions) => {
               return actions.order.create({
@@ -60,7 +61,11 @@ const PaypalButton = ({ sku, price }: Props) => {
             }}
             onApprove={async (data, actions) => {
               return actions.order.capture().then(function () {
-                console.log('okay')
+                setModalOptions({
+                  header: `Checkout`,
+                  sku,
+                  orderCompleted: true,
+                })
               })
             }}
           />

@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid'
 import Pagination from '@mui/material/Pagination'
 import Stack from '@mui/material/Stack'
 import Card from 'components/Card'
+import { ContentType } from 'types'
 
 const paginate = (array: any[], pagesize: number, pagenumber: number) => {
   return array.slice((pagenumber - 1) * pagesize, pagenumber * pagesize)
@@ -11,7 +12,11 @@ const paginate = (array: any[], pagesize: number, pagenumber: number) => {
 
 const itemsPerPage = 8
 
-const Packs = ({ contents }: { contents: any[] }) => {
+type Props = {
+  contents: ContentType[]
+}
+
+const Packs = ({ contents }: Props) => {
   const [arr, setArr] = useState(contents)
   const [pageNumber, setPageNumber] = useState(1)
 
@@ -51,4 +56,4 @@ const Packs = ({ contents }: { contents: any[] }) => {
   )
 }
 
-export default Packs
+export default React.memo(Packs)
