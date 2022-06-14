@@ -156,7 +156,7 @@ const FeaturedCard = ({ content }: Props) => {
               {content.description}
             </Typography>
             <Typography component="h6" variant="subtitle1" color="gold">
-              USD {content.price} - SKU-{content.sku}
+              USD {content.price.toPrecision(4)}
             </Typography>
           </Box>
         </CardContent>

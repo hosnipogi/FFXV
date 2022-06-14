@@ -11,7 +11,7 @@ const useModal = (node?: React.ReactNode) => {
     options,
   } = useContext(ModalContext)
   useEffect(() => {
-    if (node) {
+    if (typeof node !== 'undefined') {
       setModalNode(node)
     }
   }, [node, setModalNode])

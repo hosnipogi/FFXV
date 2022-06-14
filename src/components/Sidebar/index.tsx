@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Drawer from '@mui/material/Drawer'
 import List from '@mui/material/List'
 import Divider from '@mui/material/Divider'
@@ -22,7 +22,13 @@ type DrawerProps = {
 }
 
 function Sidebar({ width = 240 }: DrawerProps) {
+  const [mounted, setMounted] = useState(false)
   const { menuIsOpen, setMenuOpen } = useContext(MenuContext)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   const handleDrawerToggle = () => {
     setMenuOpen(!menuIsOpen)
   }
@@ -44,6 +50,7 @@ function Sidebar({ width = 240 }: DrawerProps) {
     },
   }
 
+  if (!mounted) return null // to prevent Expected server HTML to contain a matching tags error
   if (isMobile) {
     return (
       <>

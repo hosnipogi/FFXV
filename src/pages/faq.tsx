@@ -16,13 +16,31 @@ const About = () => {
 
       <Box mb={5}>
         <Typography variant="h6" mb={1} fontWeight={700}>
+          How to purchase a pack?
+        </Typography>
+        <Typography>
+          Take note of the SKU number before purchase. After selection, proceed
+          with payment through either of the following methods of payment:{' '}
+          <Span color="warning.main">Paypal</Span>,{' '}
+          <Span color="warning.main">Binance Pay</Span>,{' '}
+          <Span color="warning.main">Coinbase Pay</Span>.
+        </Typography>
+        <Typography mt={2}>
+          After payment, please message us through{' '}
+          <Span color="facebook.default">Facebook Messenger</Span> the SKU
+          number of the pack and your FFXV login account and password.
+        </Typography>
+      </Box>
+
+      <Box mb={5}>
+        <Typography variant="h6" mb={1} fontWeight={700}>
           How to contact us?
         </Typography>
         <Typography>
           You can contact us through Live Chat via{' '}
-          <span>Facebook Messenger</span> by clicking on the{' '}
-          <span>Facebook Messenger</span> icon in the bottom right of the
-          screen.
+          <Span color="facebook.default">Facebook Messenger</Span> by clicking
+          on the <Span color="facebook.default">Facebook Messenger</Span> icon
+          in the bottom right of the screen.
         </Typography>
       </Box>
 
@@ -42,14 +60,21 @@ const About = () => {
         </Typography>
         <Typography>Explanation..</Typography>
       </Box>
-
-      <Box mb={5}>
-        <Typography variant="h6" mb={1} fontWeight={700}>
-          How to purchase a pack
-        </Typography>
-        <Typography>Explanation..</Typography>
-      </Box>
     </div>
+  )
+}
+
+type SpanProps = {
+  color?: string
+  children: React.ReactNode
+}
+
+const Span = (props: SpanProps) => {
+  const { color, children } = props
+  return (
+    <Typography color={color} component="span">
+      {children}
+    </Typography>
   )
 }
 
